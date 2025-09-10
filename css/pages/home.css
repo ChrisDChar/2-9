@@ -1,0 +1,120 @@
+#home {
+    padding: 100px 20px;
+    min-height: 100vh;
+    background: #FFFFFF;
+    text-align: center;
+}
+
+.home__title {
+    font-weight: 700;
+    font-size: clamp(28px, 5vw, 54px);
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    color: #181D19;
+    margin-bottom: 15px;
+}
+
+.home__subtitle {
+    font-weight: 400;
+    font-size: clamp(16px, 3vw, 24px);
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    color: #3B433E;
+    margin-bottom: 62px;
+}
+
+.home__cards {
+    display: flex;
+    width: 100%;
+    max-width: 1010px;
+    height: 245px;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    flex-direction: row;
+}
+
+.home__card {
+    width: 270px;
+    height: 245px;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.home__card img {
+    width: 100px;
+    margin-bottom: 34px;
+}
+
+.home__card h3 {
+    font-weight: 700;
+    font-size: clamp(18px, 3vw, 28px);
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    color: #181D19;
+    margin-bottom: 18px;
+}
+
+.home__card p {
+    font-weight: 400;
+    font-size: clamp(14px, 2.5vw, 18px);
+    line-height: 28px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #545454;
+}
+
+.home__stats {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    height: 100px;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.home__stat {
+    width: 100%;
+    max-width: 135px;
+    height: 100px;
+    text-align: center;
+}
+
+.home__stat h2 {
+    font-weight: 700;
+    font-size: clamp(22px, 4vw, 44px);
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.home__stat p {
+    font-weight: 400;
+    font-size: clamp(14px, 2.5vw, 20px);
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #545454;
+}
+
+@media (max-width:1024px) {
+    .home__cards {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .home__stats {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 200px;
+        text-align: center;
+    }
+}

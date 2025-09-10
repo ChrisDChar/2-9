@@ -1,0 +1,172 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #FFFFFF;
+    padding: 20px;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #333333;
+}
+
+.navbar__links li a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #2C3847;
+    transition: 0.5s ease;
+}
+
+.navbar__links li a:hover {
+    color: #5FB848;
+}
+
+.nav__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.nav__short {
+    display: flex;
+    gap: 20px;
+}
+
+.nav__search img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav__cart img {
+    width: 25px;
+    height: 20px;
+}
+
+.nav__btn1 {
+    width: 160px;
+    height: 54px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 27px;
+    background-color: #494949;
+    color: #FFFFFF;
+    box-shadow: 0 0 5px gray;
+    transition: transform 0.5s ease;
+}
+
+.nav__btn1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px gray;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width:900px) {
+    .navbar {
+        padding-right: 10px;
+        gap: 25px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar__links {
+        gap: 10px;
+    }
+
+    .navbar__links li a {
+        font-size: 13px;
+    }
+
+    .nav__btns {
+        gap: 15px;
+    }
+
+    .nav__btn1 {
+        width: 120px;
+        height: 38px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:670px) {
+    .container {
+        max-width: 100%;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav__short {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3vw;
+    }
+
+    .nav__search img {
+        width: 5px;
+        height: 5px;
+    }
+
+    .nav__cart img {
+        width: 10px;
+        height: 5px;
+    }
+
+    .navbar__links {
+        display: none;
+    }
+
+    .nav__btn1 {
+        width: 110px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+}

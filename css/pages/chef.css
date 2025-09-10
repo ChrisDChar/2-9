@@ -1,0 +1,83 @@
+#chef {
+    padding: 100px 20px;
+    background-color: #FFFFFF;
+}
+
+.chef__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chef__text h2 {
+    font-weight: 700;
+    font-size: clamp(28px, 5vw, 54px);
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #151414;
+    margin-bottom: 30px;
+}
+
+.chef__text p {
+    font-weight: 400;
+    font-size: clamp(16px, 2.5vw, 22px);
+    letter-spacing: 0;
+    color: #545454;
+    margin-bottom: 70px;
+    text-align: left;
+}
+
+.chef__text li {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #545454;
+    text-align: left;
+}
+
+@media (max-width:1024px) {
+    .chef__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .chef__image {
+        width: 100%;
+    }
+}
+
+@media (max-width:650px) {
+    .chef__content {
+        margin-top: 50px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .chef__img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .chef__img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .chef__check li {
+        font-size: 14px;
+    } 
+
+    .chef__check li img {
+        width: 10px;
+        height: 10px;
+    }
+}
